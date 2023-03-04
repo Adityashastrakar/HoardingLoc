@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+	
+	
+  </head>
+  <body>
+    <style></style>
+    
+	
+	<h3>MY GOOGLE MAPS DEMO</h3>
+    <!--The div element for the map-->
+    
+	<div id="map"></div>
+
+<table class="contents1" id="contents1" border="1">
+<tr>
+<td>
+    <!-- checkboxes -->
+    <div id="legend">
+      <h3>Marker Legend</h3>
+      <div>
+        <span class="marker-type-a"></span>
+        <label>Type A</label>
+        <div>
+          <input type="checkbox" id="show-marker-type-a" checked="checked" />
+          <label for="show-marker-type-a">Show/Hide Type A Markers</label>
+        </div>
+      </div>
+      <div>
+        <span class="marker-type-b"></span>
+        <label>Type B</label>
+      </div>
+      <div>
+        <input type="checkbox" id="show-marker-type-b" checked="checked" />
+        <label for="show-marker-type-b">Show/Hide Type B Markers</label>
+      </div>
+      <div>
+        <div>
+          <span class="marker-type-c"></span>
+          <label>Type C</label>
+        </div>
+      </div>
+      <input type="checkbox" id="show-marker-type-c" checked="checked" />
+      <label for="show-marker-type-c">Show/Hide Type C Markers</label>
+    </div>
+  </td>  
+
+<td>	
+    <form id="inputs">
+    <label >
+      File No: <input type="text" name="name" id="name" required /><br /><br/>
+    </label>
+    <label>     
+       Date: <input type="date" name="date" id="date" required /><br /><br />
+    </label>
+    <label>
+      Marker Type:
+      <select id="marker_type" required>
+        <option value="default">--select a Marker type--</option>
+        <option value="Type-A">Type-A</option>
+        <option value="Type-B">Type-B</option>
+        <option value="Type-C">Type-C</option></select
+      ><br /><br />
+    </label>
+      <input type="button" id="start" value="Starting Point " border="1" />
+      <input type="button" id="stop" value="Ending Point " border="1" />
+      <br /><br />
+      <input type="button" id="add" value="Add" border="1"/>
+    </form>
+	
+</td>
+</tr>
+
+<table class="contents" id="contents" border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>File No</th>
+          <th>Marker Sequence</th>
+          <th>Marker Type</th>
+          <th>Total Distance in Mtr</th>
+        </tr>
+      </thead>
+	  </table>
+</table>
+	
+    
+    
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script src="./script.js"></script>
+    <script
+      asyync
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqOHKR8535QEk3fKeA2_zqP_zz7tp0tcU&callback=initMap">
+	</script>
+  </body>
+</html>
+<!-- // API Key -->
+<!-- AIzaSyAwNGP1MqHlEzQxoGQHEQ4KkQUh6VfhxZMF -->
+<!-- let Buldi = {  {ParseDMS(num.longi)}, {ParseDMS(num.lati)} }; -->
